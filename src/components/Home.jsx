@@ -7,6 +7,7 @@ import { FaSpider } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
 import "@fontsource/poppins/500.css";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 
 
 
@@ -37,7 +38,11 @@ const Home = () => {
 
 const Scroll = () => {
   return (
-    <div className=' max-md:hidden flex gap-0.5 items-center absolute top-[20rem] left-[-0.4rem]' id='scroll'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      className=' max-md:hidden flex gap-0.5 items-center absolute top-[20rem] left-[-0.4rem]' id='scroll'>
       <a href=""><svg
         width="32px"
         height="32px"
@@ -75,7 +80,7 @@ const Scroll = () => {
       </svg></a>
       <span className='font-stretch-95%'>Scroll Down</span>
       <div className='text-sm ml-1' id='scrolldown'> <FaArrowDown /> </div>
-    </div>
+    </motion.div>
   )
 }
 
@@ -86,9 +91,9 @@ const Social = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
       className='flex gap-4 max-md:gap-2 flex-col max-md:flex-row'>
-      <a href=""><div className='text-2xl transform transition duration-300  hover:text-pink-700 hover:scale-125'><FaInstagram /></div></a>
-      <a href=""><div className='text-2xl transform transition duration-300 hover:text-blue-700 hover:scale-125'><FaFacebook /></div></a>
-      <a href=""><div className='text-2xl transform transition duration-300 hover:text-blue-700 hover:scale-125'><FaTwitter /></div></a>
+      <a href="https://www.instagram.com/sayantan0709/" target="_blank"><div className='text-2xl transform transition duration-300  hover:text-pink-700 hover:scale-125'><FaInstagram /></div></a>
+      <a href="https://www.facebook.com/riosayan123/" target="_blank"><div className='text-2xl transform transition duration-300 hover:text-blue-700 hover:scale-125'><FaFacebook /></div></a>
+      <a href="https://github.com/Sayantansen123" target="_blank"><div className='text-2xl transform transition duration-300  hover:scale-125'><FaGithub /></div></a>
     </motion.div>
   )
 }

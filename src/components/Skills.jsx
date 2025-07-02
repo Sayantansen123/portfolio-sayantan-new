@@ -32,7 +32,7 @@ import { SiOpencv } from "react-icons/si";
 
 const Skills = () => {
     return (
-        <section className='pt-30 pb-15 max-md:py-0  max-md:overflow-x-hidden px-[10%]'>
+        <section className='pt-30 pb-15 max-md:py-0  max-md:overflow-x-hidden px-[10%]' id='skills'>
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -124,7 +124,7 @@ const Skill = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
-            className='text-center  py-10 bg-[#fff] rounded-[1.25rem] max-w-[500px] flex-1 min-w-[400px] max-md:min-w-[340px]' id='skill'>
+            className='text-center  py-10 bg-[#fff] rounded-[1.25rem] max-w-[500px] flex-1 min-w-[400px] max-md:min-w-[340px]' >
             <h3 className='text-2xl font-serif max-md:text-xl pb-1.5'>Skills & Tech</h3>
             <div className='flex justify-center max-md:justify-around '>
 

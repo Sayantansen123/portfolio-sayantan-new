@@ -32,7 +32,7 @@ const Contact = () => {
         );
     };
     return (
-        <section className='pt-30 pb-30 max-md:pt-13  max-md:pb-0  max-md:overflow-x-hidden px-[10%]'>
+        <section className='pt-30 pb-30 max-md:pt-13  max-md:pb-0  max-md:overflow-x-hidden px-[10%]' id='contact'>
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,12 @@ const Contact = () => {
                 <span className='font-thin'>Contact Me</span>
             </motion.div>
 
-            <div className='grid grid-cols-2 pb-[3rem] justify-center gap-6 max-md:grid-cols-1 max-md:gap-5 max-md:px-4'>
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.2 }}
+                className='grid grid-cols-2 pb-[3rem] justify-center gap-6 max-md:grid-cols-1 max-md:gap-5 max-md:px-4'>
                 <div>
                     <h3 className='text-center text-2xl text-neutral-600 mb-1.5 '>Talk to me</h3>
                     <div className='work_card' id='contact_card'>
@@ -52,7 +57,8 @@ const Contact = () => {
                         <MdEmail className='text-3xl text-neutral-600 w-[100%]' />
                         <h3>Email</h3>
                         <span>sayan123desmond@gmail.com</span>
-                        <a href="">Write Me <i>{"-->"}</i></a>
+                        <a href="mailto:sayan123desmond@gmail.com"
+                            className="hover:text-blue-400">Write Me <i>{"-->"}</i></a>
 
                     </div>
 
@@ -61,7 +67,8 @@ const Contact = () => {
                         <FaWhatsapp className='text-3xl text-neutral-600 w-[100%]' />
                         <h3>Whatsapp</h3>
                         <span>+91-9830708157</span>
-                        <a href="">Write Me <i>{"-->"}</i></a>
+                        <a className=' hover:text-blue-400' href="https://api.whatsapp.com/send?phone=919830708157"
+                            target="_blank">Write Me <i>{"-->"}</i></a>
 
                     </div>
 
@@ -70,7 +77,7 @@ const Contact = () => {
                         <FaFacebookMessenger className='text-3xl text-neutral-600 w-[100%]' />
                         <h3>Messenger</h3>
                         <span>Sayantan Sen</span>
-                        <a href="">Write Me <i>{"-->"}</i></a>
+                        <a className=' hover:text-blue-400' href="https://www.facebook.com/riosayan123/" target="_blank" >Write Me <i>{"-->"}</i></a>
 
                     </div>
                 </div>
@@ -102,7 +109,7 @@ const Contact = () => {
                     </form>
 
                 </div>
-            </div>
+            </motion.div>
 
 
 

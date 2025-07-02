@@ -20,9 +20,9 @@ const Footer = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 2 }}
                     className='flex gap-3 max-md:gap-2 w-[100%] justify-center mt-2'>
-                    <a href=""><div className='text-2xl transform transition duration-300  hover:text-pink-700 hover:scale-125 w-[100%]'><FaInstagram /></div></a>
-                    <a href=""><div className='text-2xl transform transition duration-300 hover:text-blue-700 hover:scale-125 w-[100%]'><FaFacebook /></div></a>
-                    <a href=""><div className='text-2xl transform transition duration-300 hover:text-blue-700 hover:scale-125 w-[100%]'><FaTwitter /></div></a>
+                    <a href="https://www.instagram.com/sayantan0709/" target="_blank"><div className='text-2xl transform transition duration-300  hover:text-pink-700 hover:scale-125 w-[100%]'><FaInstagram /></div></a>
+                    <a href="https://www.facebook.com/riosayan123/" target="_blank"><div className='text-2xl transform transition duration-300 hover:text-blue-700 hover:scale-125 w-[100%]'><FaFacebook /></div></a>
+                    <a href="https://x.com/sayantansen0709?s=09/" target="_blank"><div className='text-2xl transform transition duration-300 hover:text-blue-700 hover:scale-125 w-[100%]'><FaTwitter /></div></a>
                 </motion.div>
             </div>
         </footer>

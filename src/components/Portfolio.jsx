@@ -16,7 +16,12 @@ const Portfolio = () => {
         <span className='font-thin'>Most Recent Works</span>
       </motion.div>
 
-      <div id='work_container'>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+        id='work_container'>
         {projectsData.map((item) => {
           return <div key={item.id} id='work_card'>
             <img className="w-[350px] h-[200px] rounded-[1rem] mb-[1.4rem] max-sm:w-[300px]" src={item.image} alt="" />
@@ -26,7 +31,7 @@ const Portfolio = () => {
 
         })}
 
-      </div>
+      </motion.div>
 
 
 
