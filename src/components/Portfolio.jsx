@@ -4,7 +4,7 @@ import { projectsData } from './ClientData'
 
 const Portfolio = () => {
   return (
-    <section className='pt-13 pb-30 max-md:pt-0  max-md:overflow-x-hidden px-[10%]'>
+    <section className='pt-13 pb-30 max-md:pt-0  max-md:overflow-x-hidden px-[10%]' id='portfolio'>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

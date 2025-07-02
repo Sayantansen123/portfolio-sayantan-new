@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fontsource/poppins": "^5.1.1",
     "@iconscout/react-unicons": "^2.2.1",
     "@iconscout/react-unicons-solid": "^1.1.2",

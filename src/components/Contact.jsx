@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { motion } from "framer-motion"
+import emailjs from '@emailjs/browser';
 import { IoIosSend } from 'react-icons/io'
 import { MdEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
@@ -7,6 +8,29 @@ import { FaFacebookMessenger } from "react-icons/fa";
 
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_kyc',
+            'template_mvn9psc',
+            form.current,
+            '3TAqxsq4Y2bV7gzSh'
+        ).then(
+            (result) => {
+                console.log(result.text);
+                alert("Message sent successfully!");
+                form.current.reset();
+            },
+            (error) => {
+                console.log(error.text);
+                alert("Something went wrong, please try again.");
+            }
+        );
+    };
     return (
         <section className='pt-30 pb-30 max-md:pt-13  max-md:pb-0  max-md:overflow-x-hidden px-[10%]'>
             <motion.div
@@ -53,15 +77,15 @@ const Contact = () => {
 
                 <div>
                     <h3 className='text-center text-2xl text-neutral-600 mb-5'>Contact with me</h3>
-                    <form action="">
+                    <form ref={form} onSubmit={sendEmail}>
                         <div className='relative h-[4rem] mb-[2rem]'>
                             <label className='absolute top-[-1.2rem] left-[0rem] text-md bg-transparent z-10 ' >Name</label>
-                            <input className='absolute top-1.5 left-0 w-[100%] h-[100%] border-2 rounded-[0.75rem] p-[1.5rem] bg-none outline-none z-1' type="text" placeholder='Write your name' required />
+                            <input className='absolute top-1.5 left-0 w-[100%] h-[100%] border-2 rounded-[0.75rem] p-[1.5rem] bg-none outline-none z-1' type="text" name='name' placeholder='Write your name' required />
                         </div>
 
                         <div className='relative h-[4rem] mb-[2rem]'>
                             <label className='absolute top-[-1.2rem] left-[0rem] text-md bg-transparent z-10 ' >Email</label>
-                            <input className='absolute top-1.5 left-0 w-[100%] h-[100%] border-2 rounded-[0.75rem] p-[1.5rem] bg-none outline-none z-1' type="email" placeholder='Write your email' required />
+                            <input className='absolute top-1.5 left-0 w-[100%] h-[100%] border-2 rounded-[0.75rem] p-[1.5rem] bg-none outline-none z-1' type="email" placeholder='Write your email' name="email" required />
                         </div>
 
                         <div className='relative h-[4rem] mb-[1rem]'>
@@ -69,11 +93,12 @@ const Contact = () => {
                             <textarea className='absolute top-1.5 left-0 w-[100%] h-[10.2rem]  border-2 rounded-[0.75rem] p-[1.5rem] bg-none outline-none z-1' name="writeme" cols="30" rows="10" placeholder='Write me something here '></textarea>
                         </div>
                         <div className='relative h-[4rem] mb-[1rem]'>
-                            <motion.div
+                            <motion.button
+
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
-                                transition={{ duration: 4.5 }}
-                                className="absolute top-[5rem] flex text-nowrap  max-md:text-sm rounded-lg gap-0.5 mt-5 pb-0.5 border-2 border-black w-[140px] h-[40px] justify-center items-center hover:text-white hover:bg-black"><a href="">Send Message</a></motion.div></div>
+                                transition={{ duration: 1 }}
+                                className="absolute top-[5rem] flex text-nowrap  max-md:text-sm rounded-lg gap-0.5 mt-5 pb-0.5 border-2 border-black w-[140px] h-[40px] justify-center items-center hover:text-white hover:bg-black"><a >Send Message</a></motion.button></div>
                     </form>
 
                 </div>
