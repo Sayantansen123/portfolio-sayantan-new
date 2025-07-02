@@ -122,7 +122,7 @@ const Data = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 4.5 }}
-        className="flex text-nowrap  max-md:text-sm rounded-lg gap-0.5 mt-5 pb-0.5 border-2 border-black w-[110px] justify-center items-center hover:text-white hover:bg-black"><a href="">Say Hello </a><IoIosSend /></motion.div>
+        className="flex text-nowrap  max-md:text-sm rounded-lg gap-0.5 mt-5 pb-0.5 border-2 border-black w-[110px] justify-center items-center hover:text-white hover:bg-black"><a href="#contact">Say Hello </a><IoIosSend /></motion.div>
       <Scroll />
     </div>
   )

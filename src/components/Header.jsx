@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { UisHouseUser, UisBriefcase, UisScenery, UisAt, UisTimesCircle, UisApps } from '@iconscout/react-unicons-solid'
 import { motion } from 'framer-motion';
+import { SiHyperskill } from "react-icons/si";
+import { FaChromecast } from "react-icons/fa";
 
 
 
@@ -34,7 +36,7 @@ const Header = () => {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1 }}
-              ><a className='flex flex-col items-center text-[0.875rem] text-black transform font-medium transition duration-300 max-md:text-[0.9rem] hover:text-black hover:font-bold hover:scale-120' href="#skills"><div className='hidden max-md:block'><UisAt /></div>Skills</a></motion.li>
+              ><a className='flex flex-col items-center text-[0.875rem] text-black transform font-medium transition duration-300 max-md:text-[0.9rem] hover:text-black hover:font-bold hover:scale-120' href="#skills"><div className='hidden max-md:block'><SiHyperskill /></div>Skills</a></motion.li>
               <motion.li
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
@@ -44,7 +46,7 @@ const Header = () => {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1.5 }}
-              ><a className='flex flex-col items-center text-[0.875rem] text-black transform font-medium transition duration-300 max-md:text-[0.9rem] hover:text-black hover:font-bold hover:scale-120' href="#portfolio"><div className='hidden max-md:block'><UisAt /></div>Portfolio</a></motion.li>
+              ><a className='flex flex-col items-center text-[0.875rem] text-black transform font-medium transition duration-300 max-md:text-[0.9rem] hover:text-black hover:font-bold hover:scale-120' href="#portfolio"><div className='hidden max-md:block'><FaChromecast className='text-2xl' /></div>Portfolio</a></motion.li>
               <motion.li
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
