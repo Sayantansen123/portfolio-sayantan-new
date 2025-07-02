@@ -6,26 +6,28 @@ import Skills from "./components/Skills";
 import Services from "./components/Services";
 
 import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 
 
 function App() {
- 
+
   return (
 
 
     <>
-    
-      <Header/>
+
+      <Header />
       <main >
-        <Home/>
-        <About/>
-        <Skills/>
-        <Services/>
-        <Portfolio/>
-        
+        <Home />
+        <About />
+        <Skills />
+        <Services />
+        <Portfolio />
+        <Contact />
+
       </main>
 
-      
+
     </>
   )
 }
