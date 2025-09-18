@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
+import MyTerminal from "./components/MyTerminal";
 
 
 function App() {
@@ -22,9 +23,11 @@ function App() {
 
     <>
       {loaded ? <Loader /> : <div>
-        <Header />
-        <main >
+
+        <main className="relative" >
+          <Header />
           <Home />
+          <MyTerminal />
           <About />
           <Skills />
           <Services />

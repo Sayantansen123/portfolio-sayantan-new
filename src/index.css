@@ -200,3 +200,17 @@ body {
 #skill {
   border: 1px solid rgb(0, 0, 0, 0.1);
 }
+.react-terminal-wrapper {
+  /* fix height */
+  overflow: hidden; /* stop outer scroll */
+}
+
+.react-terminal-wrapper > div {
+  /* keep scroll functional */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.react-terminal-wrapper > div::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Edge */
+}

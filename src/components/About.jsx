@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaAward } from "react-icons/fa";
 import { FaThumbsUp } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 import { motion } from "framer-motion";
+import MyTerminal from './MyTerminal';
 
 const About = () => {
+  const [showTerminal, setShowTerminal] = useState(false);
   return (
     <section className="pt-30 max-md:py-0 max-md:pb-10  max-md:overflow-x-hidden px-[10%] " id='about'>
       <motion.div
@@ -24,11 +26,11 @@ const About = () => {
         transition={{ duration: 1.5, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
         className='flex flex-wrap gap-12.5 justify-center max-md:items-center'>
-        <img className="w-[271px] h-[366px] rounded-[3.5rem] min-w-[260px] " src="/profileImage.jpeg" alt="" />
+        <img className=" rounded-[3.5rem] min-w-[260px] " src="/monitors-typing.gif" alt="" />
 
         <div className='w-[40%] min-w-[290px] '>
           <Info />
-          <p className='text-sm font-light pb-5'>I'm Sayantan Sen, a web developer passionate about building scalable and user-friendly applications using React.js, Next.js, Node.js, and Express. I’ve worked on projects like Auraverse, a gamified web app promoting social awareness, a real-time chat application, a real estate platform, a web scraping API, and a video streaming platform. Constantly exploring new technologies, I love turning ideas into functional, impactful solutions. Let's build something great together! 🚀</p>
+          <p className='text-sm font-light pb-5'>I’m Sayantan Sen, a web developer building scalable, user-friendly apps with React.js, Next.js, Node.js, and Express. I’ve worked on projects like Auraverse, a real-time chat app, a real estate platform, a web scraping API, and a video streaming platform. Explore my skills and projects—use the terminal to learn more!</p>
           <a href="/resume.pdf" download>
             <button
               className=" text-center  w-40 rounded-2xl h-12 relative text-black text-[1rem] font-semibold group"
@@ -55,7 +57,20 @@ const About = () => {
               </div>
               <p className="translate-x-2 ">Download CV</p>
             </button>
+
+
           </a>
+          {!showTerminal && (
+            <button
+              onClick={() => setShowTerminal(true)}
+              className="mb-2 px-3 py-1 bg-gray-800 text-white rounded hover:bg-gray-700"
+            >
+              Open Terminal
+            </button>)}
+
+          {showTerminal && (
+            <MyTerminal show={showTerminal} setShow={setShowTerminal} />
+          )}
         </div>
 
       </motion.div>
