@@ -21,7 +21,7 @@ const MyTerminal = ({ show, setShow }) => {
 
         let response = '';
 
-        const trimmedInput = terminalInput.trim();
+        const trimmedInput = terminalInput.trim().toLowerCase();
 
         switch (true) {
             // Custom commands
