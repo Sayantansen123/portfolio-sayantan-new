@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-
 @layer utilities {
   .grid-cols-custom {
     grid-template-columns: 116px repeat(2, 1fr);
@@ -31,14 +29,13 @@ html {
 }
 
 #contact_card {
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem;
   border-radius: 0.75rem;
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
 }
 
 #headers {
