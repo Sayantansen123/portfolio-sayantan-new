@@ -185,6 +185,12 @@ body {
   height: 160px;
   flex: wrap;
   flex: 1;
+  position: relative;
+}
+
+.infobox:hover {
+  background-color: transparent;
+  border: none;
 }
 
 .infoboxS {

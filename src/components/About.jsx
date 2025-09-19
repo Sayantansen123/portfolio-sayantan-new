@@ -86,24 +86,48 @@ const Info = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
       className='flex flex-wrap gap-[1rem] mb-5'>
-      <div className='infobox'>
-        <div className='text-2xl'> <FaAward /></div>
+      <div className='infobox relative group inline-block'>
+        <div className='text-2xl '> <FaAward /></div>
 
         <h3 className='font-bold'>Experience</h3>
         <span className='font-thin'>2+ Years </span>
+
+        <div className="absolute bottom-[50%] -left-70  mb-2 hidden group-hover:block z-[140] ">
+          <img
+            src="/exp.png"
+            alt="tooltip"
+            className="  rounded-sm border-gray-400 border-2"
+          />
+        </div>
       </div>
 
-      <div className='infobox'>
+      <div className='infobox relative group inline-block'>
         <div className='text-2xl'><FaThumbsUp /></div>
 
         <h3 className='font-bold'>Completed</h3>
         <span className='font-thin'>10+ Projects</span>
+
+        <div className="absolute bottom-[50%] -left-70  mb-2 hidden group-hover:block z-[140] ">
+          <img
+            src="/git.png"
+            alt="tooltip"
+            className="  rounded-sm border-gray-400 border-2"
+          />
+        </div>
       </div>
 
-      <div className='infobox'>
+      <div className='infobox relative group inline-block '>
         <div className='text-2xl'><BiSupport /></div>
         <h3 className='font-bold'>Support</h3>
         <span className='font-thin'>Online 24/7</span>
+
+        <div className="absolute bottom-[50%] -left-70  mb-2 hidden group-hover:block z-[140] ">
+          <img
+            src="/battery.png"
+            alt="tooltip"
+            className="  rounded-sm border-gray-400 border-2"
+          />
+        </div>
       </div>
 
     </motion.div>

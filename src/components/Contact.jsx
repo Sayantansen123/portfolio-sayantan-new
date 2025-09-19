@@ -1,11 +1,7 @@
 import React, { useRef } from 'react'
 import { motion } from "framer-motion"
 import emailjs from '@emailjs/browser';
-import { IoIosSend } from 'react-icons/io'
-import { MdEmail } from "react-icons/md";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaFacebookMessenger } from "react-icons/fa";
-import Spline from "@splinetool/react-spline";
+
 import { FaDiscord, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
