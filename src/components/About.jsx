@@ -92,7 +92,7 @@ const Info = () => {
         <h3 className='font-bold'>Experience</h3>
         <span className='font-thin'>2+ Years </span>
 
-        <div className="absolute bottom-[50%] -left-70  mb-2 hidden group-hover:block z-[140] max-md:hidden">
+        <div className=" infos absolute bottom-[50%] -left-70  mb-2 hidden group-hover:block z-[140] max-md:hidden  ">
           <img
             src="/exp.png"
             alt="tooltip"
@@ -107,7 +107,7 @@ const Info = () => {
         <h3 className='font-bold'>Completed</h3>
         <span className='font-thin'>10+ Projects</span>
 
-        <div className="absolute bottom-[50%] -left-70  mb-2 hidden group-hover:block z-[140] max-md:hidden">
+        <div className=" infos absolute bottom-[50%] -left-70  mb-2 hidden group-hover:block z-[140] max-md:hidden ">
           <img
             src="/git.png"
             alt="tooltip"
@@ -121,7 +121,7 @@ const Info = () => {
         <h3 className='font-bold'>Support</h3>
         <span className='font-thin'>Online 24/7</span>
 
-        <div className="absolute bottom-[50%] -left-70  mb-2 hidden group-hover:block z-[140] max-md:hidden">
+        <div className="infos absolute bottom-[50%] -left-70  mb-2 hidden group-hover:block z-[140] max-md:hidden">
           <img
             src="/battery.png"
             alt="tooltip"
