@@ -1,9 +1,19 @@
 @import "tailwindcss";
 
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
 @layer utilities {
   .grid-cols-custom {
     grid-template-columns: 116px repeat(2, 1fr);
   }
+}
+
+body {
+  font-family: "Indie Flower", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #work_container {

@@ -30,47 +30,45 @@ const About = () => {
 
         <div className='w-[40%] min-w-[290px] '>
           <Info />
-          <p className='text-sm font-light pb-5'>I’m Sayantan Sen, a web developer building scalable, user-friendly apps with React.js, Next.js, Node.js, and Express. I’ve worked on projects like Auraverse, a real-time chat app, a real estate platform, a web scraping API, and a video streaming platform. Explore my skills and projects—use the terminal to learn more!</p>
-          <a href="/resume.pdf" download>
-            <button
-              className=" text-center  w-40 rounded-2xl h-12 relative text-black text-[1rem] font-semibold group"
-              type="button"
-            >
-              <div
-                className="bg-black rounded-xl h-10 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-10 duration-500"
+          <p className='text-lg max-md:text-sm font-light pb-5 font-indie text-gray-500'>I’m Sayantan Sen, a web developer building scalable, user-friendly apps with React.js, Next.js, Node.js, and Express. I’ve worked on projects like Auraverse, a real-time chat app, a real estate platform, a web scraping API, and a video streaming platform. Explore my skills and projects—use the terminal to learn more!</p>
+          <div className='flex gap-3'>
+
+            <a href="/resume.pdf" download>
+
+
+              <button
+                class="relative flex items-center justify-center bg-neutral-600 px-4 py-2 border-2 border-black text-sm rounded-lg font-semibold text-white cursor-pointer overflow-hidden transition-all ease-custom hover:text-black hover:rounded-xl group hover:transition-all duration-700 hover:duration-700"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 1024 1024"
-                  height="20px"
-                  width="20px"
-                >
-                  <path
-                    d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
-                    fill="#ffff"
-                  ></path>
-                  <path
-                    d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
-                    fill="#ffff"
-                  ></path>
-                </svg>
-              </div>
-              <p className="translate-x-2 ">Download CV</p>
-            </button>
+                <span class="relative z-[1] transition-all duration-700 ease-custom">
+                  Download CV
+                </span>
+                <span
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full opacity-0 transition-all duration-700 ease-custom group-hover:w-36 group-hover:h-36 group-hover:opacity-100"
+                ></span>
+              </button>
 
 
-          </a>
-          {!showTerminal && (
-            <button
-              onClick={() => setShowTerminal(true)}
-              className="mb-2 px-3 py-1 bg-gray-800 text-white rounded hover:bg-gray-700"
-            >
-              Open Terminal
-            </button>)}
 
-          {showTerminal && (
-            <MyTerminal show={showTerminal} setShow={setShowTerminal} />
-          )}
+
+
+            </a>
+            {!showTerminal && (
+              <button
+                onClick={() => setShowTerminal(true)}
+                class="relative flex items-center justify-center bg-neutral-600 px-4 py-2 border-2 border-black text-sm rounded-lg font-semibold text-white cursor-pointer overflow-hidden transition-all ease-custom hover:text-black hover:rounded-xl group hover:transition-all duration-700 hover:duration-700"
+              >
+                <span class="relative z-[1] transition-all duration-700 ease-custom">
+                  Open Terminal
+                </span>
+                <span
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full opacity-0 transition-all duration-700 ease-custom group-hover:w-36 group-hover:h-36 group-hover:opacity-100"
+                ></span>
+              </button>)}
+
+            {showTerminal && (
+              <MyTerminal show={showTerminal} setShow={setShowTerminal} />
+            )}
+          </div>
         </div>
 
       </motion.div>

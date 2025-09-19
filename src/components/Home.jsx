@@ -119,11 +119,22 @@ const Data = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 4 }}
         className='text-[0.9rem] pt-7  max-md:text-[0.7rem] max-md:pt-2 from-neutral-500'>I'm Sayantan Sen, a passionate web developer and digital creator specializing in React.js, JavaScript, Next.js, Node.js, and Express. With a strong foundation in frontend and backend development, I build dynamic and user-friendly applications that deliver seamless experiences.</motion.p>
-      <motion.div
+      <motion.a
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 4.5 }}
-        className="flex text-nowrap w-[110px] p-1.5 max-md:text-sm rounded-lg gap-0.5 mt-5  border-2 border-black justify-center items-center hover:text-white hover:bg-black"><a href="#contact">Say Hello </a><IoIosSend /></motion.div>
+        href="#contact"
+        className="flex text-nowrap w-[110px]  max-md:text-sm rounded-lg  mt-5 ">
+        <button
+          className="relative flex items-center justify-center bg-gray-900 px-4 py-2 border-2 border-black text-sm rounded-lg font-semibold text-white cursor-pointer overflow-hidden transition-all ease-custom hover:text-black hover:rounded-xl group hover:transition-all duration-700 hover:duration-700"
+        >
+          <span className="relative z-[1] transition-all duration-700 ease-custom">
+            Say Hello
+          </span>
+          <span
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full opacity-0 transition-all duration-700 ease-custom group-hover:w-36 group-hover:h-36 group-hover:opacity-100"
+          ></span>
+        </button></motion.a>
 
       <div className='flex flex-row'>
         <Scroll />

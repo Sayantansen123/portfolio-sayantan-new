@@ -51,6 +51,7 @@ const Header = () => {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1.8 }}
+
               ><a className='flex flex-col items-center text-[0.875rem] text-black transform font-medium transition duration-300 max-md:text-[0.9rem] hover:text-black hover:font-bold hover:scale-120' href="#contact"><div className='hidden max-md:block' ><UisAt /></div>Contact</a></motion.li>
             </ul>
           </motion.div>
