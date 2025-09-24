@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import MyTerminal from "./components/MyTerminal";
+import Navbar from "./components/Navbar";
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
       {loaded ? <Loader /> : <div>
 
         <main className="relative" >
-          <Header />
+          <Navbar />
           <Home />
           <MyTerminal />
           <About />
