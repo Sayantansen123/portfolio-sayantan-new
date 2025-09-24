@@ -106,17 +106,17 @@ const Contact = () => {
                     <form ref={form} onSubmit={sendEmail}>
                         <div className='relative h-[4rem] mb-[2rem]'>
                             <label className='absolute top-[-1.2rem] left-[0rem] text-md bg-transparent z-10  max-sm:text-sm' >Name</label>
-                            <input className='absolute top-1.5 left-0 w-[100%] h-[100%] border-2 rounded-[0.75rem] p-[1.5rem] bg-none outline-none z-1' type="text" name='name' placeholder='Write your name' required />
+                            <input className='absolute top-1.5 left-0 w-[100%] h-[100%] border-2 border-black rounded-[0.75rem] p-[1.5rem] bg-none outline-none z-1' type="text" name='name' placeholder='Write your name' required />
                         </div>
 
                         <div className='relative h-[4rem] mb-[2rem]'>
                             <label className='absolute top-[-1.2rem] left-[0rem] text-md bg-transparent z-10  max-sm:text-sm' >Email</label>
-                            <input className='absolute top-1.5 left-0 w-[100%] h-[100%] border-2 rounded-[0.75rem] p-[1.5rem] bg-none outline-none z-1' type="email" placeholder='Write your email' name="email" required />
+                            <input className='absolute top-1.5 left-0 w-[100%] h-[100%] border-2 border-black rounded-[0.75rem] p-[1.5rem] bg-none outline-none z-1' type="email" placeholder='Write your email' name="email" required />
                         </div>
 
                         <div className='relative h-[4rem] mb-[1rem]'>
                             <label className='absolute top-[-1.2rem] left-[0rem] text-md bg-transparent z-10  max-sm:text-sm' >Write me something</label>
-                            <textarea className='absolute top-1.5 left-0 w-[100%] h-[10.2rem]  border-2 rounded-[0.75rem] p-[1.5rem] bg-none outline-none z-1' name="writeme" cols="30" rows="10" placeholder='Write me something here '></textarea>
+                            <textarea className='absolute top-1.5 left-0 w-[100%] h-[10.2rem] border-black  border-2 rounded-[0.75rem] p-[1.5rem] bg-none outline-none z-1' name="writeme" cols="30" rows="10" placeholder='Write me something here '></textarea>
                         </div>
                         <div className='relative h-[4rem] mb-[1rem]'>
                             <motion.button
