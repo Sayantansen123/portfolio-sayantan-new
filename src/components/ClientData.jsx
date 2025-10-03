@@ -2,6 +2,7 @@
 import Work1 from "/work1.png"
 import Work2 from "/work2.png"
 import Work3 from "/work3.png"
+import Work4 from "/work4.png"
 import Work5 from "/work5.png"
 
 
@@ -29,6 +30,13 @@ export const projectsData = [
     title: "Auraverse",
     category: "design",
     link: "https://devfolio.co/projects/auraverse-ae51",
+  },
+  {
+    id: 4,
+    image: Work4,
+    title: "Ajay Enterprise",
+    category: "web",
+    link: "https://ajayenterprises.netlify.app/",
   },
 
   {

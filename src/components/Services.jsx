@@ -33,7 +33,7 @@ const Services = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
           id='servicediv'
-          className='flex flex-wrap gap-[3rem] mb-5 px-23 max-md:px-8 justify-center'>
+          className='flex flex-wrap gap-[2rem] mb-5 px-23 max-md:px-8 justify-center'>
           <div className='infoboxS'>
             <div className='text-3xl max-md:text-2xl '> <FaVideo /></div>
 
