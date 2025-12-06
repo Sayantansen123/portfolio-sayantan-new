@@ -12,6 +12,7 @@ import MyTerminal from "./components/MyTerminal";
 import Navbar from "./components/Navbar";
 
 
+
 function App() {
 
   const [loaded, setLoaded] = useState(true)
